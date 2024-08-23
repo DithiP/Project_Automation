@@ -6,7 +6,7 @@
 	</listeners>
 	<test name="chrome test">
 		<parameter name="Browser" value="Chrome"></parameter>
-		<parameter name="userName" value="dithi12"></parameter>
+		<parameter name="userName" value="admin"></parameter>
 		<parameter name="password" value="admin"></parameter>
 		<classes>
 			<class name="testScript.LoginPage_Test">
