@@ -8,12 +8,38 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Parallel Class Testing</th></tr>
-<tr><td><a href="#t0">parallelTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,817</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">TestNGFile</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">20,918</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parallel Class Testing</th></tr></tbody><tbody id="t0"><tr><th colspan="4">parallelTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testScript.LoginPage_Test</td><td><a href="#m0">verify_User_is_Able_To_Login_Using_Valid_Credentials</a></td><td rowspan="1">1724417447101</td><td rowspan="1">1548</td></tr><tr class="passedodd"><td rowspan="1">testScript.NewAdmin_Test</td><td><a href="#m1">verify_User_is_Able_To_Add_NewUser</a></td><td rowspan="1">1724417447348</td><td rowspan="1">6031</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestNGFile &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testScript.LoginPage_Test</td><td><a href="#m0">verify_User_is_Able_to_Login_Using_Valid_Username_invalid_Password</a></td><td rowspan="1">1724429067839</td><td rowspan="1">10796</td></tr><tr><th colspan="4">TestNGFile &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testScript.LoginPage_Test</td><td><a href="#m1">verify_User_is_Able_to_Login_Using_Valid_Username_invalid_Password</a></td><td rowspan="1">1724429084290</td><td rowspan="1">1275</td></tr></tbody>
 </table>
-<h2>parallelTest</h2><h3 id="m0">testScript.LoginPage_Test#verify_User_is_Able_To_Login_Using_Valid_Credentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin</td><td>admin</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testScript.NewAdmin_Test#verify_User_is_Able_To_Add_NewUser</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin</td><td>admin</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestNGFile</h2><h3 id="m0">testScript.LoginPage_Test#verify_User_is_Able_to_Login_Using_Valid_Username_invalid_Password</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin</td><td>admin</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger alert-dismissible&apos;]&quot;}
+  (Session info: chrome=128.0.6613.84)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [992a3db84d1a88606206f294cad1e498, findElement {value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.84, chrome: {chromedriverVersion: 128.0.6613.84 (606aa55c7d68..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58306}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58306/devtoo..., se:cdpVersion: 128.0.6613.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 992a3db84d1a88606206f294cad1e498
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+	at pages.Login_Page.isAlertisLoaded(Login_Page.java:42)
+	at testScript.LoginPage_Test.verify_User_is_Able_to_Login_Using_Valid_Username_invalid_Password(LoginPage_Test.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testScript.LoginPage_Test#verify_User_is_Able_to_Login_Using_Valid_Username_invalid_Password</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admin@123</td><td>admin123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
